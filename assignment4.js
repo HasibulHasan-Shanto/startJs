@@ -61,4 +61,37 @@ function  isSame(arr1 , arr2 ) {
 const firstArray = [34 , 5 ,7 ,9 ]
 const secondArray = [ 34 , 5 , 7 ]
 const finalArray = isSame(firstArray, secondArray)
-console.log(finalArray)
+// console.log(finalArray)
+
+
+function  resultReport( marks ) {
+    if(!Array.isArray(marks)){
+        return 'Invalid'
+    }
+
+    let sum = 0
+    let pass = 0
+    let fail = 0
+    for (const mark of marks) {
+        sum += mark
+        if(mark >= 40){
+         pass++
+        }else{
+         fail++
+        }
+    }
+    let finalScore = 0
+    if(marks.length > 0){
+        finalScore = Math.round(sum / marks.length)
+    }
+    return {
+        finalScore: finalScore,
+        pass: pass,
+        fail: fail
+    }
+}
+const arr = [98, 87, 67, 91, 92, 33, 87]
+const array = resultReport(arr)
+console.log(array)
+
+

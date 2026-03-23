@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .food-name {
+            font-weight: 900;
+            color: black;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            background: red;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        #update-comment{
+            width: full;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            color: blue;
+            font-weight: 800;
+            padding: 10px 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="update-innerText">Today i'm learning DOM</h1>
+    <button onclick="console.log(45)">Click me</button>
+    <button onclick="alert('This is another button')">Another Button</button>
+    <br>
+    <button onclick="makeYellow()">Yellow Button</button>
+    <button onclick="makeRed()">Red Button</button>
+    <br>
+    <button id="blue-button">Black Button</button>
+    <button id="button-light-blue">Light Blue</button>
+    <button id="update-btn">Update</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="user-name">No user found</p>
+    <input placeholder="Enter you're name" type="text" name="name" id="name">
+    <button id="input-name" required>Update name</button>
+    <br>
+    <br>
+    <br>
+    <p id="update-comment"></p>
+    <input type="text" name="text" id="comment">
+    <button id="comment-button">comment</button>
+    <button id="delete-button">Delete</button>
+    <script src="event.js"></script>
+</body>
+
+</html>

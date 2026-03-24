@@ -58,7 +58,7 @@ const inputName = document.getElementById('input-name').addEventListener('click'
 })
 
 // create a comment box
-const updateComment = document.getElementById('update-comment')
+const commentContainer = document.getElementById('comment-container')
 const commentButton = document.getElementById('comment-button').addEventListener('click', function(){
     const comment = document.getElementById('comment')
     const inputComment = comment.value
@@ -66,11 +66,34 @@ const commentButton = document.getElementById('comment-button').addEventListener
         alert('Please write something')
         return
     }
-    updateComment.innerText = inputComment
-    updateComment.style.display = 'block'
+    const createComment = document.createElement('p')
+    createComment.classList.add('update-comment')
+    createComment.style.display = 'block'
+    createComment.innerHTML = inputComment
+    commentContainer.appendChild(createComment)
     comment.value = ''
 })
 document.getElementById('delete-button').addEventListener('click', function(){
-        updateComment.innerText = ''
-        updateComment.style.display = 'none'
+        commentContainer.innerHTML = ''
     })
+
+
+
+const postContainer = document.getElementById('post-container')
+const postButton = document.getElementById('post-button').addEventListener('click', function(){ 
+    const getText = document.getElementById('text-area')
+    const updateComment = getText.value
+    if(updateComment === ''){
+        alert('Write something')
+        return
+    }
+    const createElement = document.createElement('p')
+    createElement.classList.add('create-post')
+    createElement.style.display = 'block'
+    createElement.innerHTML = updateComment
+    postContainer.appendChild(createElement)
+    getText.value = ''
+})
+document.getElementById('delete-post-button').addEventListener('click', function(){
+    postContainer.innerText = ''
+})

@@ -17,7 +17,18 @@
             text-decoration: none;
             list-style-type: none;
         }
-        #update-comment{
+
+        .update-comment {
+            width: full;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            color: blue;
+            font-weight: 800;
+            padding: 10px 10px;
+            display: none;
+        }
+
+        .create-post {
             width: full;
             border: 1px solid lightblue;
             border-radius: 5px;
@@ -50,10 +61,22 @@
     <br>
     <br>
     <br>
-    <p id="update-comment"></p>
+    <div id="comment-container">
+        <p class="update-comment"></p>
+    </div>
     <input type="text" name="text" id="comment">
     <button id="comment-button">comment</button>
     <button id="delete-button">Delete</button>
+    <br>
+    <br>
+    <br>
+    <h1>All Post Here</h1>
+    <div id="post-container">
+        <p class="create-post"></p>
+    </div>
+    <textarea name="text" id="text-area" cols="50" rows="5" placeholder="Type any text.."></textarea><br>
+    <button id="post-button">Post</button>
+    <button id="delete-post-button">Delete Post</button>
     <script src="event.js"></script>
 </body>
 

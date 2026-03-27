@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Mobile App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#F4F5F7]">
-    <div>
-        <form class="bg-">
-            <label>
-                Mobile Number
-            </label><br>
-            <input class="bg-grey- border-" type="number" name="number" id="number" placeholder="Number" required>
-        </form>
+<body class="max-w-[1320px] mx-auto bg-[#F4F5F7] flex flex-col justify-center items-center">
+    <div class="h-[130px] w-[300px] bg-[url(./assets/bg.png)] bg-cover">
+        <img class="m-auto mt-7" src="assets/Group.png" alt="">
     </div>
+
+            <form class="bg-slate-50 White w-[350px] p-8 rounded-xl  shadow-md">
+                <label class="text-[16px] font-bold">
+                    Mobile Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full" type="text" name="number" id="input-number" required
+                    placeholder="Enter your number"><br>
+                <label id="" class="text-[16px] font-bold">
+                    4 Digit Pin
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full" type="text" name="number" id="input-pin" required
+                    placeholder="Enter 4 Digit Pin"><br>
+                <button id="login-button" class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
+                    Login
+                </button>
+            </form>
     <script src="payoo.js"></script>
 </body>
 </html>

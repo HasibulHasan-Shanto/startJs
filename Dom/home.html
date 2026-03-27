@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-8 max-w-lg mx-auto">
+    <div class="heading-part flex items-center justify-between mb-4">
+        <div class="flex items-center">
+            <img src="assets/Group.png" alt="">
+            <div>
+                <h1 class="text-[#080808] font-extrabold">
+                    $<span id="balance" class="text-[#080808] font-extrabold">1000</span>
+                </h1>
+                <div class="available-balance text-[16px] font-regular text-gray-400">
+                    Available Balance
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="logout-button" class="border border-gray-400 py-2 px-3 text-gray-400 rounded-sm">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log Out
+            </button>
+        </div>
+    </div>
+    <hr class="text-gray-400">
+
+    <div class="py-8">
+        <h1 class="text-[#080808] text-[24px] font-extrabold pb-3">
+            🔥 Welcome to Payooo!
+        </h1>
+        <p class="payoo-title text-gray-400 text-[16px]">
+            Enjoy easy and convenient financial services with us. <br>Cashout charge is low and
+        </p>
+        <div id="money-buttons" class=" pt-8 grid grid-cols-3 gap-5">
+            <div id="add-money" class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+                <img class="m-auto" src="./assets/wallet1.png" alt="">
+                <button class="text-[14px] text-[#080808]">
+                    Add Money
+                </button>
+            </div>
+            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+                <img class="m-auto" src="./assets/send1.png" alt="">
+                <button class="text-[14px] text-[#080808]">
+                    Cash Out
+                </button>
+            </div>
+            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+                <img class="m-auto" src="./assets/money1.png" alt="">
+                <button class="text-[14px] text-[#080808]">
+                    Transfer Money
+                </button>
+            </div>
+            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+                <img class="m-auto" src="./assets/bonus1.png" alt="">
+                <button class="text-[14px] text-[#080808]">
+                    Get Bonus
+                </button>
+            </div>
+            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+                <img class="m-auto" src="./assets/purse1.png" alt="">
+                <button class="text-[14px] text-[#080808]">
+                    Pay Bill
+                </button>
+            </div>
+            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+                <img class="m-auto" src="./assets/transaction1.png" alt="">
+                <button class="text-[14px] text-[#080808]">
+                    Transactions
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="all-form">
+        <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
+            <label class="text-[16px] font-medium">
+                Select A Bank
+            </label><br>
+            <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
+                <option class="" disabled selected>Select A Bank</option>
+                <option>North America</option>
+                <option>EU west</option>
+                <option>South East Asia</option>
+            </select><br>
+            <label id="" class="text-[16px] font-medium">
+                Bank Account Number
+            </label><br>
+            <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number" id="input-account-number" 
+                placeholder="Enter 11 digit account number"><br>
+            <label id="" class="text-[16px] font-medium">
+                Amount to AddD
+            </label><br>
+            <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number" id="input-withdraw-amount" 
+                placeholder="Add Amount to Withdraw"><br>
+            <label id="" class="text-[16px] font-medium">
+                Pin Number
+            </label><br>
+            <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number" id="input-pin" 
+                placeholder="Enter 4 digit pin number"><br>
+            <button id="add-money-button" class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
+                Add Money
+            </button>
+        </form>
+    </div>
+    <!-- <div class="transactions-history bg-gray-100 p-4 hidden">
+        <div class="flex items-center justify-between">
+            <p class="latest-payment text-[18px] text-[#080808] font-semibold">
+                Latest Payment
+            </p>
+            <p class="view-all text-[14px] font-regular text-gray-400">
+                View All
+            </p>
+        </div>
+    </div> -->
+    <script src="home.js"></script>
+</body>
+
+</html>

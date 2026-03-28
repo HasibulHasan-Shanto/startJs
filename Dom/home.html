@@ -42,37 +42,39 @@
             Enjoy easy and convenient financial services with us. <br>Cashout charge is low and
         </p>
         <div id="money-buttons" class=" pt-8 grid grid-cols-3 gap-5">
-            <div id="add-money" class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="add-money" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/wallet1.png" alt="">
-                <button class="text-[14px] text-[#080808]">
+                <p class="text-[14px] text-[#080808]">
                     Add Money
-                </button>
+                </p>
             </div>
-            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="cash-out" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/send1.png" alt="">
-                <button class="text-[14px] text-[#080808]">
+                <p class="text-[14px] text-[#080808]">
                     Cash Out
-                </button>
+                </p>
             </div>
-            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="transfer-money"
+                class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/money1.png" alt="">
-                <button class="text-[14px] text-[#080808]">
+                <p class="text-[14px] text-[#080808]">
                     Transfer Money
-                </button>
+                </p>
             </div>
-            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="get-bonus" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/bonus1.png" alt="">
-                <button class="text-[14px] text-[#080808]">
+                <p class="text-[14px] text-[#080808]">
                     Get Bonus
-                </button>
+                </p>
             </div>
-            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="pay-bill" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/purse1.png" alt="">
-                <button class="text-[14px] text-[#080808]">
+                <p class="text-[14px] text-[#080808]">
                     Pay Bill
-                </button>
+                </p>
             </div>
-            <div class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="transaction"
+                class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/transaction1.png" alt="">
                 <button class="text-[14px] text-[#080808]">
                     Transactions
@@ -81,37 +83,159 @@
         </div>
     </div>
     <div class="all-form">
-        <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
-            <label class="text-[16px] font-medium">
-                Select A Bank
-            </label><br>
-            <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
-                <option class="" disabled selected>Select A Bank</option>
-                <option>North America</option>
-                <option>EU west</option>
-                <option>South East Asia</option>
-            </select><br>
-            <label id="" class="text-[16px] font-medium">
-                Bank Account Number
-            </label><br>
-            <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number" id="input-account-number" 
-                placeholder="Enter 11 digit account number"><br>
-            <label id="" class="text-[16px] font-medium">
-                Amount to AddD
-            </label><br>
-            <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number" id="input-withdraw-amount" 
-                placeholder="Add Amount to Withdraw"><br>
-            <label id="" class="text-[16px] font-medium">
-                Pin Number
-            </label><br>
-            <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number" id="input-pin" 
-                placeholder="Enter 4 digit pin number"><br>
-            <button id="add-money-button" class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
-                Add Money
-            </button>
-        </form>
+        <div id="add-money-form" class="hidden">
+            <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
+                <label class="text-[16px] font-medium">
+                    Select A Bank
+                </label><br>
+                <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
+                    <option class="" disabled selected>Select A Bank</option>
+                    <option>North America</option>
+                    <option>EU west</option>
+                    <option>South East Asia</option>
+                </select><br>
+                <label id="" class="text-[16px] font-medium">
+                    Bank Account Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-account-number" placeholder="Enter 11 digit account number"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Amount to AddD
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-withdraw-amount" placeholder="Add Amount to Withdraw"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Pin Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-pin" placeholder="Enter 4 digit pin number"><br>
+                <button id="add-money-button"
+                    class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
+                    Add Money
+                </button>
+            </form>
+        </div>
+        <div id="cash-out-form" class="hidden">
+            <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
+                <label id="" class="text-[16px] font-medium">
+                    Agent Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-account-number" placeholder="Enter 11 digit account number"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Amount
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-withdraw-amount" placeholder="Enter amount to withdraw"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Pin Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-pin" placeholder="Enter 4 digit pin number"><br>
+                <button id="withdraw-money-button"
+                    class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
+                    Withdraw Money
+                </button>
+            </form>
+        </div>
+        <div id="transfer-money-form" class="hidden">
+            <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
+                <label class="text-[16px] font-medium">
+                    Select A Bank
+                </label><br>
+                <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
+                    <option class="" disabled selected>Select A Bank</option>
+                    <option>North America</option>
+                    <option>EU west</option>
+                    <option>South East Asia</option>
+                </select><br>
+                <label id="" class="text-[16px] font-medium">
+                    Bank Account Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-account-number" placeholder="Enter 11 digit account number"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Amount to AddD
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-withdraw-amount" placeholder="Add Amount to Withdraw"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Pin Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-pin" placeholder="Enter 4 digit pin number"><br>
+                <button id="send-money-button"
+                    class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
+                    Send Money
+                </button>
+            </form>
+        </div>
+        <div id="get-bonus-form " class="hidden">
+            <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
+                <label class="text-[16px] font-medium">
+                    Select A Bank
+                </label><br>
+                <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
+                    <option class="" disabled selected>Select A Bank</option>
+                    <option>North America</option>
+                    <option>EU west</option>
+                    <option>South East Asia</option>
+                </select><br>
+                <label id="" class="text-[16px] font-medium">
+                    Bank Account Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-account-number" placeholder="Enter 11 digit account number"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Amount to AddD
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-withdraw-amount" placeholder="Add Amount to Withdraw"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Pin Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-pin" placeholder="Enter 4 digit pin number"><br>
+                <button id="get-bonus-button"
+                    class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
+                    Get Bonus
+                </button>
+            </form>
+        </div>
+        <div id="pay-bill-form" class="hidden">
+            <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
+                <label class="text-[16px] font-medium">
+                    Select A Bank
+                </label><br>
+                <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
+                    <option class="" disabled selected>Select A Bank</option>
+                    <option>North America</option>
+                    <option>EU west</option>
+                    <option>South East Asia</option>
+                </select><br>
+                <label id="" class="text-[16px] font-medium">
+                    Bank Account Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-account-number" placeholder="Enter 11 digit account number"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Amount to AddD
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-withdraw-amount" placeholder="Add Amount to Withdraw"><br>
+                <label id="" class="text-[16px] font-medium">
+                    Pin Number
+                </label><br>
+                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
+                    id="input-pin" placeholder="Enter 4 digit pin number"><br>
+                <button id="add-money-button"
+                    class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
+                    Add Money
+                </button>
+            </form>
+        </div>
     </div>
-    <!-- <div class="transactions-history bg-gray-100 p-4 hidden">
+    <div id="transactions-history" class=" bg-gray-100 p-10">
         <div class="flex items-center justify-between">
             <p class="latest-payment text-[18px] text-[#080808] font-semibold">
                 Latest Payment
@@ -120,7 +244,7 @@
                 View All
             </p>
         </div>
-    </div> -->
+    </div> 
     <script src="home.js"></script>
 </body>
 

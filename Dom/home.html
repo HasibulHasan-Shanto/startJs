@@ -76,9 +76,9 @@
             <div id="transaction"
                 class="money w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/transaction1.png" alt="">
-                <button class="text-[14px] text-[#080808]">
+                <p class="text-[14px] text-[#080808]">
                     Transactions
-                </button>
+                </p>
             </div>
         </div>
     </div>
@@ -161,32 +161,13 @@
                 </button>
             </form>
         </div>
-        <div id="get-bonus-form " class="hidden">
+        <div id="get-bonus-form" class="hidden">
             <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
-                <label class="text-[16px] font-medium">
-                    Select A Bank
-                </label><br>
-                <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
-                    <option class="" disabled selected>Select A Bank</option>
-                    <option>North America</option>
-                    <option>EU west</option>
-                    <option>South East Asia</option>
-                </select><br>
                 <label id="" class="text-[16px] font-medium">
-                    Bank Account Number
+                    Enter Bonus Coupon
                 </label><br>
                 <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
-                    id="input-account-number" placeholder="Enter 11 digit account number"><br>
-                <label id="" class="text-[16px] font-medium">
-                    Amount to AddD
-                </label><br>
-                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
-                    id="input-withdraw-amount" placeholder="Add Amount to Withdraw"><br>
-                <label id="" class="text-[16px] font-medium">
-                    Pin Number
-                </label><br>
-                <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
-                    id="input-pin" placeholder="Enter 4 digit pin number"><br>
+                    id="input-coupon" placeholder="Enter your coupon"><br>
                 <button id="get-bonus-button"
                     class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
                     Get Bonus
@@ -196,32 +177,32 @@
         <div id="pay-bill-form" class="hidden">
             <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
                 <label class="text-[16px] font-medium">
-                    Select A Bank
+                    Select To Pay
                 </label><br>
-                <select id="bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
+                <select id="pay-bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
                     <option class="" disabled selected>Select A Bank</option>
                     <option>North America</option>
                     <option>EU west</option>
                     <option>South East Asia</option>
                 </select><br>
                 <label id="" class="text-[16px] font-medium">
-                    Bank Account Number
+                    Biller Account Number
                 </label><br>
                 <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
-                    id="input-account-number" placeholder="Enter 11 digit account number"><br>
+                    id="input-biller-account-number" placeholder="Enter 11 digit account number"><br>
                 <label id="" class="text-[16px] font-medium">
-                    Amount to AddD
+                    Amount to Pay
                 </label><br>
                 <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
-                    id="input-withdraw-amount" placeholder="Add Amount to Withdraw"><br>
+                    id="input-pay-amount" placeholder="Add Amount to Withdraw"><br>
                 <label id="" class="text-[16px] font-medium">
                     Pin Number
                 </label><br>
                 <input class="p-3 bg-gray-100 rounded-3xl my-4 w-full border-none" type="text" name="number"
-                    id="input-pin" placeholder="Enter 4 digit pin number"><br>
-                <button id="add-money-button"
+                    id="input-pay-pin" placeholder="Enter 4 digit pin number"><br>
+                <button id="pay-now-button"
                     class="bg-[#0874F2] text-[#FFFFFF] rounded-3xl font-bold text-[16px] py-3 w-full">
-                    Add Money
+                    Pay Now
                 </button>
             </form>
         </div>

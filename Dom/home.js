@@ -30,6 +30,8 @@ document.getElementById('add-money').addEventListener('click', function(){
     cashText.style.color = '#080808'
     cashText.style.fontWeight = 'normal'
     cashOut.style.border = '1px solid gray'
+
+
     document.getElementById('transfer-money-form').style.display = 'none'
     const transfer = document.getElementById('transfer-money')
     const transferText = transfer.querySelector('p')
@@ -37,6 +39,29 @@ document.getElementById('add-money').addEventListener('click', function(){
     transfer.style.border = '1px solid gray'
     transferText.style.color = '#080808'
     transferText.style.fontWeight = 'normal'
+
+    const getBonus = document.getElementById('get-bonus')
+    const getText = getBonus.querySelector('p')
+    getBonus.style.backgroundColor = '#FFFFFF'
+    getText.style.color = '#080808'
+    getText.style.fontWeight = 'normal'
+    getBonus.style.border = '1px solid gray'
+    document.getElementById('get-bonus-form').style.display = 'none'
+
+    const payBill = document.getElementById('pay-bill')
+    const payText = payBill.querySelector('p')
+    payBill.style.backgroundColor = '#FFFFFF'
+    payText.style.color = '#080808'
+    payText.style.fontWeight = 'normal'
+    payBill.style.border = '1px solid gray'
+    document.getElementById('pay-bill-form').style.display = 'none'
+
+    const transactionHistory = document.getElementById('transaction')
+    const transText = transactionHistory.querySelector('p')
+    transactionHistory.style.backgroundColor = '#FFFFFF'
+    transText.style.color = '#080808'
+    transText.style.fontWeight = 'normal'
+    transactionHistory.style.border = '1px solid gray'
     //remove style
 })
 const addMoneyButton = document.getElementById('add-money-button').addEventListener('click', function(e){
@@ -74,6 +99,8 @@ document.getElementById('cash-out').addEventListener('click', function(){
     addMoney.style.border = '1px solid gray'
     addText.style.color = '#080808'
     addText.style.fontWeight = 'normal'
+
+
     document.getElementById('transfer-money-form').style.display = 'none'
     const transfer = document.getElementById('transfer-money')
     const transferText = transfer.querySelector('p')
@@ -81,6 +108,31 @@ document.getElementById('cash-out').addEventListener('click', function(){
     transfer.style.border = '1px solid gray'
     transferText.style.color = '#080808'
     transferText.style.fontWeight = 'normal'
+
+    const getBonus = document.getElementById('get-bonus')
+    const getText = getBonus.querySelector('p')
+    getBonus.style.backgroundColor = '#FFFFFF'
+    getText.style.color = '#080808'
+    getText.style.fontWeight = 'normal'
+    getBonus.style.border = '1px solid gray'
+    document.getElementById('get-bonus-form').style.display = 'none'
+    document.getElementById('transactions-history').style.display = 
+    'none'
+
+    const payBill = document.getElementById('pay-bill')
+    const payText = payBill.querySelector('p')
+    payBill.style.backgroundColor = '#FFFFFF'
+    payText.style.color = '#080808'
+    payText.style.fontWeight = 'normal'
+    payBill.style.border = '1px solid gray'
+    document.getElementById('pay-bill-form').style.display = 'none'
+
+    const transactionHistory = document.getElementById('transaction')
+    const transText = transactionHistory.querySelector('p')
+    transactionHistory.style.backgroundColor = '#FFFFFF'
+    transText.style.color = '#080808'
+    transText.style.fontWeight = 'normal'
+    transactionHistory.style.border = '1px solid gray'
     //remove style
     const cashOut = document.getElementById('cash-out')
     const text = cashOut.querySelector('p')
@@ -139,6 +191,31 @@ document.getElementById('transfer-money').addEventListener('click', function(){
     cashText.style.fontWeight = 'normal'
     document.getElementById('cash-out-form').style.display = 'none'
     document.getElementById('add-money-form').style.display = 'none'
+
+    const getBonus = document.getElementById('get-bonus')
+    const getText = getBonus.querySelector('p')
+    getBonus.style.backgroundColor = '#FFFFFF'
+    getText.style.color = '#080808'
+    getText.style.fontWeight = 'normal'
+    getBonus.style.border = '1px solid gray'
+    document.getElementById('get-bonus-form').style.display = 'none'
+    document.getElementById('transactions-history').style.display = 
+    'none'
+
+    const payBill = document.getElementById('pay-bill')
+    const payText = payBill.querySelector('p')
+    payBill.style.backgroundColor = '#FFFFFF'
+    payText.style.color = '#080808'
+    payText.style.fontWeight = 'normal'
+    payBill.style.border = '1px solid gray'
+    document.getElementById('pay-bill-form').style.display = 'none'
+
+    const transactionHistory = document.getElementById('transaction')
+    const transText = transactionHistory.querySelector('p')
+    transactionHistory.style.backgroundColor = '#FFFFFF'
+    transText.style.color = '#080808'
+    transText.style.fontWeight = 'normal'
+    transactionHistory.style.border = '1px solid gray'
 /// remove style 
     const transfer = document.getElementById('transfer-money')
     const text = transfer.querySelector('p')
@@ -176,4 +253,223 @@ document.getElementById('send-money-button').addEventListener('click', function(
         alert('Pin number is incorrect')
     }
 
+})
+
+document.getElementById('get-bonus').addEventListener('click', function(e){
+    e.preventDefault()
+    
+    //remove style
+    const addMoney = document.getElementById('add-money')
+    const addText = addMoney.querySelector('p')
+    addMoney.style.backgroundColor = '#FFFFFF'
+    addMoney.style.border = '1px solid gray'
+    addText.style.color = '#080808'
+    addText.style.fontWeight = 'normal'
+    
+    const cashOut = document.getElementById('cash-out')
+    const cashText = cashOut.querySelector('p')
+    cashOut.style.backgroundColor = '#FFFFFF'
+    cashOut.style.border = '1px solid gray'
+    cashText.style.color = '#080808'
+    cashText.style.fontWeight = 'normal'
+    document.getElementById('cash-out-form').style.display = 'none'
+    document.getElementById('add-money-form').style.display = 'none'
+
+    document.getElementById('transfer-money-form').style.display = 'none'
+    const transfer = document.getElementById('transfer-money')
+    const transferText = transfer.querySelector('p')
+    transfer.style.backgroundColor = '#FFFFFF'
+    transfer.style.border = '1px solid gray'
+    transferText.style.color = '#080808'
+    transferText.style.fontWeight = 'normal'
+    document.getElementById('transactions-history').style.display = 
+    'none'
+
+    const payBill = document.getElementById('pay-bill')
+    const payText = payBill.querySelector('p')
+    payBill.style.backgroundColor = '#FFFFFF'
+    payText.style.color = '#080808'
+    payText.style.fontWeight = 'normal'
+    payBill.style.border = '1px solid gray'
+    document.getElementById('pay-bill-form').style.display = 'none'
+
+    const transactionHistory = document.getElementById('transaction')
+    const transText = transactionHistory.querySelector('p')
+    transactionHistory.style.backgroundColor = '#FFFFFF'
+    transText.style.color = '#080808'
+    transText.style.fontWeight = 'normal'
+    transactionHistory.style.border = '1px solid gray'
+    //remove style
+    const getBonus = document.getElementById('get-bonus')
+    const getText = getBonus.querySelector('p')
+    getBonus.style.backgroundColor = '#0DB89A'
+    getText.style.color = '#0874F2'
+    getText.style.fontWeight = 'bold'
+    getBonus.style.border = '2px solid #0874F2'
+    document.getElementById('get-bonus-form').style.display = 'block'
+
+})
+
+document.getElementById('get-bonus-button').addEventListener('click', function(e){
+    e.preventDefault()
+    const coupon = 'payoo12'
+    const inputCoupon = document.getElementById('input-coupon')
+    const getInputCoupon = inputCoupon.value
+    if(getInputCoupon.toLowerCase() === coupon.toLowerCase()){
+        const balance = document.getElementById('balance')
+        const updateBalance = parseInt(balance.innerText)
+        const newBalance = updateBalance + 999
+        balance.innerText = newBalance
+        inputCoupon.value = ''
+    }
+    else{
+        alert('please enter valid coupon')
+    }
+})
+
+document.getElementById('pay-bill').addEventListener('click', function(){
+    //remove style
+    const addMoney = document.getElementById('add-money')
+    const addText = addMoney.querySelector('p')
+    addMoney.style.backgroundColor = '#FFFFFF'
+    addMoney.style.border = '1px solid gray'
+    addText.style.color = '#080808'
+    addText.style.fontWeight = 'normal'
+    
+    const cashOut = document.getElementById('cash-out')
+    const cashText = cashOut.querySelector('p')
+    cashOut.style.backgroundColor = '#FFFFFF'
+    cashOut.style.border = '1px solid gray'
+    cashText.style.color = '#080808'
+    cashText.style.fontWeight = 'normal'
+    document.getElementById('cash-out-form').style.display = 'none'
+    document.getElementById('add-money-form').style.display = 'none'
+
+    document.getElementById('transfer-money-form').style.display = 'none'
+    const transfer = document.getElementById('transfer-money')
+    const transferText = transfer.querySelector('p')
+    transfer.style.backgroundColor = '#FFFFFF'
+    transfer.style.border = '1px solid gray'
+    transferText.style.color = '#080808'
+    transferText.style.fontWeight = 'normal'
+    document.getElementById('transactions-history').style.display = 
+    'none'
+
+    const getBonus = document.getElementById('get-bonus')
+    const getText = getBonus.querySelector('p')
+    getBonus.style.backgroundColor = '#FFFFFF'
+    getText.style.color = '#080808'
+    getText.style.fontWeight = 'normal'
+    getBonus.style.border = '1px solid gray'
+    document.getElementById('get-bonus-form').style.display = 'none'
+    document.getElementById('transactions-history').style.display = 
+    'none'
+
+    const transactionHistory = document.getElementById('transaction')
+    const transText = transactionHistory.querySelector('p')
+    transactionHistory.style.backgroundColor = '#FFFFFF'
+    transText.style.color = '#080808'
+    transText.style.fontWeight = 'normal'
+    transactionHistory.style.border = '1px solid gray'
+    //remove style
+    const payBill = document.getElementById('pay-bill')
+    const payText = payBill.querySelector('p')
+    payBill.style.backgroundColor = '#0DB89A'
+    payText.style.color = '#0874F2'
+    payText.style.fontWeight = 'bold'
+    payBill.style.border = '2px solid #0874F2'
+    document.getElementById('pay-bill-form').style.display = 'block'
+})
+
+document.getElementById('pay-now-button').addEventListener('click', function(e){
+    e.preventDefault()
+    const balanceEle = document.getElementById('balance')
+    const currentBal = parseInt(balanceEle.innerText)
+    const payBank = document.getElementById('pay-bank')
+    const getPayBank = payBank.value
+    const billerAccount = document.getElementById('input-biller-account-number')
+    const getBillerAccount = billerAccount.value
+    const payAmount = document.getElementById('input-pay-amount')
+    const getPayAmount = parseInt(payAmount.value) || 0
+    const payPin = document.getElementById('input-pay-pin')
+    const getPayPin = payPin.value
+    if(getPayBank !== 'North America' && getPayBank !== 'EU west' && getPayBank !== 'South East Asia'){
+        alert('Please Select Any Bank')
+        return
+    }else if(getBillerAccount !== '01912379742'){
+        alert('Please Enter Valid Account Number')
+        return
+    }else if(getPayAmount > currentBal){
+        alert(`You Don't Have Money.`)
+        return
+    }else if(getPayPin === '88621'){
+        
+        const newBal = currentBal - getPayAmount
+        balanceEle.innerText = newBal
+        alert('Paid Successful.')
+        payBank.value = ''
+        billerAccount.value = ''
+        payAmount.value = ''
+        payPin.value = ''
+    }
+    else{
+        alert('Incorrect Pin')
+    }
+})
+
+document.getElementById('transaction').addEventListener('click', function(){
+    //remove style
+    const addMoney = document.getElementById('add-money')
+    const addText = addMoney.querySelector('p')
+    addMoney.style.backgroundColor = '#FFFFFF'
+    addMoney.style.border = '1px solid gray'
+    addText.style.color = '#080808'
+    addText.style.fontWeight = 'normal'
+    
+    const cashOut = document.getElementById('cash-out')
+    const cashText = cashOut.querySelector('p')
+    cashOut.style.backgroundColor = '#FFFFFF'
+    cashOut.style.border = '1px solid gray'
+    cashText.style.color = '#080808'
+    cashText.style.fontWeight = 'normal'
+    document.getElementById('cash-out-form').style.display = 'none'
+    document.getElementById('add-money-form').style.display = 'none'
+
+    document.getElementById('transfer-money-form').style.display = 'none'
+    const transfer = document.getElementById('transfer-money')
+    const transferText = transfer.querySelector('p')
+    transfer.style.backgroundColor = '#FFFFFF'
+    transfer.style.border = '1px solid gray'
+    transferText.style.color = '#080808'
+    transferText.style.fontWeight = 'normal'
+    document.getElementById('transactions-history').style.display = 
+    'none'
+
+    const getBonus = document.getElementById('get-bonus')
+    const getText = getBonus.querySelector('p')
+    getBonus.style.backgroundColor = '#FFFFFF'
+    getText.style.color = '#080808'
+    getText.style.fontWeight = 'normal'
+    getBonus.style.border = '1px solid gray'
+    document.getElementById('get-bonus-form').style.display = 'none'
+    document.getElementById('transactions-history').style.display = 
+    'none'
+
+    const payBill = document.getElementById('pay-bill')
+    const payText = payBill.querySelector('p')
+    payBill.style.backgroundColor = '#FFFFFF'
+    payText.style.color = '#080808'
+    payText.style.fontWeight = 'normal'
+    payBill.style.border = '1px solid gray'
+    document.getElementById('pay-bill-form').style.display = 'none'
+    //remove style
+
+    const transactionHistory = document.getElementById('transaction')
+    const transText = transactionHistory.querySelector('p')
+    transactionHistory.style.backgroundColor = '#0DB89A'
+    transText.style.color = '#0874F2'
+    transText.style.fontWeight = 'bold'
+    transactionHistory.style.border = '2px solid #0874F2'
+    document.getElementById('transactions-history').style.display = 
+    'block'
 })

@@ -18,7 +18,7 @@
             <img src="assets/Group.png" alt="">
             <div>
                 <h1 class="text-[#080808] font-extrabold">
-                    $<span id="balance" class="text-[#080808] font-extrabold">1000</span>
+                    $<span id="balance" class="text-[#080808] font-extrabold">9999</span>
                 </h1>
                 <div class="available-balance text-[16px] font-regular text-gray-400">
                     Available Balance
@@ -42,13 +42,15 @@
             Enjoy easy and convenient financial services with us. <br>Cashout charge is low and
         </p>
         <div id="money-buttons" class=" pt-8 grid grid-cols-3 gap-5">
-            <div id="add-money" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="add-money"
+                class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/wallet1.png" alt="">
                 <p class="text-[14px] text-[#080808]">
                     Add Money
                 </p>
             </div>
-            <div id="cash-out" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="cash-out"
+                class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/send1.png" alt="">
                 <p class="text-[14px] text-[#080808]">
                     Cash Out
@@ -61,13 +63,15 @@
                     Transfer Money
                 </p>
             </div>
-            <div id="get-bonus" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="get-bonus"
+                class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/bonus1.png" alt="">
                 <p class="text-[14px] text-[#080808]">
                     Get Bonus
                 </p>
             </div>
-            <div id="pay-bill" class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
+            <div id="pay-bill"
+                class="flex flex-col gap-2 w-[130px] bg-[#FFFFFF] border border-gray-400 text-center rounded-md py-5">
                 <img class="m-auto" src="./assets/purse1.png" alt="">
                 <p class="text-[14px] text-[#080808]">
                     Pay Bill
@@ -84,6 +88,9 @@
     </div>
     <div class="all-form">
         <div id="add-money-form" class="hidden">
+            <h1 class="text-[16px] font-semibold text-[#080808] mb-4">
+                Add Money
+            </h1>
             <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
                 <label class="text-[16px] font-medium">
                     Select A Bank
@@ -116,6 +123,9 @@
             </form>
         </div>
         <div id="cash-out-form" class="hidden">
+            <h1 class="text-[16px] font-semibold text-[#080808] mb-4">
+                Cash Out
+            </h1>
             <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
                 <label class="text-[16px] font-medium">
                     Agent Number
@@ -139,6 +149,9 @@
             </form>
         </div>
         <div id="transfer-money-form" class="hidden">
+            <h1 class="text-[16px] font-semibold text-[#080808] mb-4">
+                Transfer Money
+            </h1>
             <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
                 <label id="" class="text-[16px] font-medium">
                     User Account Number
@@ -162,6 +175,9 @@
             </form>
         </div>
         <div id="get-bonus-form" class="hidden">
+            <h1 class="text-[16px] font-semibold text-[#080808] mb-4">
+                Bonus
+            </h1>
             <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
                 <label id="" class="text-[16px] font-medium">
                     Enter Bonus Coupon
@@ -175,15 +191,19 @@
             </form>
         </div>
         <div id="pay-bill-form" class="hidden">
+            <h1 class="text-[16px] font-semibold text-[#080808] mb-4">
+                Pay Bill
+            </h1>
             <form class="bg-slate-50 White w-full p-8 rounded-xl  shadow-md">
                 <label class="text-[16px] font-medium">
                     Select To Pay
                 </label><br>
                 <select id="pay-bank" class="select select-neutral p-3 bg-gray-100 rounded-3xl my-4 border-none w-full">
-                    <option class="" disabled selected>Select A Bank</option>
-                    <option>North America</option>
-                    <option>EU west</option>
-                    <option>South East Asia</option>
+                    <option class="" disabled selected>Select to Pay</option>
+                    <option>Water Bill</option>
+                    <option>Electric Bill</option>
+                    <option>Gas Bill</option>
+                    <option>WIFI Bill</option>
                 </select><br>
                 <label id="" class="text-[16px] font-medium">
                     Biller Account Number
@@ -207,8 +227,8 @@
             </form>
         </div>
     </div>
-    <div id="transactions-history" class=" bg-gray-100 p-10">
-        <div class="flex items-center justify-between">
+    <div id="transactions-history" class="hidden bg-gray-100 p-10">
+        <!-- <div class="flex items-center justify-between">
             <p class="latest-payment text-[18px] text-[#080808] font-semibold">
                 Latest Payment
             </p>
@@ -216,7 +236,22 @@
                 View All
             </p>
         </div>
-    </div> 
+
+        <div class="bg-white rounded-md">
+            <div class="flex justify-between items-center p-4 rounded">
+                <div class="flex items-center gap-4">
+                    <div class="bg-gray-300 p-2 rounded-full">
+                        <img class="m-auto" src="./assets/wallet1.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-[16px] font-semibold text-[#080808]">name</h1>
+                        <p class=" text-[12px] font-regular text-[#080808]">time</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div> -->
+    </div>
     <script src="home.js"></script>
 </body>
 

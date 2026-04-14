@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+        <style>
+            #post-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+        
+            .post-card {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: cornflowerblue;
+                border: 1px solid gray;
+                border-radius: 10px;
+                box-shadow: 2px 2px 2px 1px black;
+                height: 250px;
+                text-align: justify;
+                height: 300px;
+            }
+button {
+    padding: 8px 30px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+        </style>
+</head>
+<body>
+    
+    <h1>
+        All Post Here
+    </h1>
+    <div id="post-container">
+
+    </div>
+    <script src="getPostPutPatch.js"></script>
+</body>
+</html>

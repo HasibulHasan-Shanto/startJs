@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>English Janala</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <section class="bg-[#BADEFF] p-5">
+        <header>
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="flex items-center  font-medium text-3xl">
+                        English
+                        <img src="./assets/logo.png" alt="">
+                        জানাল
+                    </h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="border border-[#422AD5] rounded-sm py-1 px-3 font-semibold text-[14px] text-[#422AD5]">
+                        <i class="fa-solid fa-circle-question"></i>
+                        FAQ
+                    </button>
+                    <button
+                        class="border border-[#422AD5] rounded-sm py-1 px-3 font-semibold text-[14px] text-[#422AD5]">
+                        <i class="fa-solid fa-book-open"></i>
+                        Learn
+                    </button>
+                    <button
+                        class="border border-[#422AD5] rounded-sm py-1 px-3 font-semibold text-[14px] text-[#422AD5]">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div class="flex items-center justify-between">
+            <div class="">
+                <h1 class="banner-title font-bold text-[48px]">
+                    <Span class="text-[#00BCFF]">
+                        English
+                    </Span>
+                    is Easy!!
+                </h1>
+                <p class="banner-paragraph font-medium text-[18px] text-[#18181B]">
+                    আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>আপনার দক্ষতা বাড়াতে চান,
+                    আমাদের Interactive Lessons
+                    আপনাকে নিয়ে<br> যাবে অন্য একটি Level এ
+                </p>
+            </div>
+            <img src="./assets/hero-student.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1 class="font-bold text-[48px] text-center">
+                <Span class="text-[#00BCFF]">
+                    Let's
+                </Span>
+                Learn Vocabularies
+            </h1>
+            <div id="lesson-btn" class="flex gap-2 justify-center mb-10 mt-4">
+
+            </div>
+            <div class="bg-gray-200 p-4">
+                <div id="lesson-container" class="lesson grid grid-cols-3 gap-4">
+                    <div class="bg-red-300 p-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="enlish-janala.js"></script>
 </body>
+
 </html>

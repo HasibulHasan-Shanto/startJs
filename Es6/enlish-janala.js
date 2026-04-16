@@ -14,7 +14,7 @@ const singleLesson = (id) => {
 
 }
 const displaySingleLesson = (words) => {
-    console.log(words)
+    // console.log(words)
     const lessonContainer = document.getElementById('lesson-container')
     lessonContainer.innerHTML = ''
     if (words.length === 0) {
@@ -46,7 +46,7 @@ const displaySingleLesson = (words) => {
                             ${word.meaning} / ${word.pronunciation}
                         </h2>
                         <div class="flex items-center justify-between">
-                        <div class="bg-gray-300 px-3 py-2 text-center rounded-sm">
+                        <div class="info bg-gray-300 px-3 py-2 text-center rounded-sm">
                         <i class="fa-solid fa-circle-info"></i>
                         </div>
                         <div class="bg-gray-300 px-3 py-2 text-center rounded-sm">
@@ -56,8 +56,23 @@ const displaySingleLesson = (words) => {
                         
                         </div>
         `
+        const infoButton = div.querySelector('.info')
+        infoButton.addEventListener('click', () => {
+            loadWord(word.id) 
+        })
         lessonContainer.appendChild(div)
     }
+
+}
+
+const loadWord = (id) => {
+    fetch(`https://openapi.programming-hero.com/api/word/${id}`)
+        .then(res => res.json())
+        .then(data => displayWord(data.data))
+}
+const displayWord = (singleWords) => {
+    const modal = document.getElementById('model')
+    
 
 }
 const displayLesson = (lessons) => {

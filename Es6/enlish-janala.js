@@ -74,6 +74,8 @@ const displayLesson = (lessons) => {
         `
         btn.addEventListener('click', () => {
             singleLesson(lesson.level_no)
+            const card = document.getElementById('card')
+            card.style.display = 'none'
             const allButton = document.querySelectorAll('.lesson-btn')
             for (const singleButton of allButton) {
                 singleButton.classList.remove('bg-[#422AD5]', 'text-white')
@@ -86,3 +88,28 @@ const displayLesson = (lessons) => {
 }
 
 allLesson()
+
+const plusButton = document.querySelectorAll('.plus-icon')
+for (const plus of plusButton) {
+    plus.addEventListener('click', () => {
+        plus.style.display = 'none'
+        const parent = plus.closest('.bg-gray-300')
+
+        const minus = parent.querySelector('.minus-icon')
+        const paragraph = parent.querySelector('.paragraph')
+        minus.style.display = 'block'
+        paragraph.style.display = 'block'
+    })
+}
+const minusButton = document.querySelectorAll('.minus-icon')
+for (const minus of minusButton) {
+    minus.addEventListener('click', () => {
+        minus.style.display = 'none'
+        const parent = minus.closest('.bg-gray-300')
+
+        const plus = parent.querySelector('.plus-icon')
+        const paragraph = parent.querySelector('.paragraph')
+        plus.style.display = 'block'
+        paragraph.style.display = 'none'
+    })
+}

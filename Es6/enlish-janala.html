@@ -96,35 +96,9 @@
     <section id="model" class="max-w-[1400px] mx-auto flex justify-center">
         <!-- Open the modal using ID.showModal() method -->
         <div class="">
-            <button class="btn" onclick="my_modal_3.showModal()">open modal</button>
             <dialog id="my_modal_3" class="modal">
-                <div class="modal-box">
-                    <form method="dialog">
-                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                    </form>
-                    <h1 class="font-bold text-[20px]">
-                        ${singleWords.word} (singleWords.meaning)
-                    </h1>
-                    <p class="font-bold">
-                        Meaning
-                    </p>
-                    <p>
-                        ${singleWords.meaning}
-                    </p>
-                    <h3 class="font-bold text-[18px]">
-                        Example
-                    </h3>
-                    <p>
-                        ${singleWords.sentence}
-                    </p>
-                    <h4 class="font-bold">
-                        সমার্থক শব্দ গুলো
-                    </h4>
-                    <div class="flex items-center gap-2">
-                        <div class="bg-sky-400 px-4 py-1 rounded-md">${singleWords.pronunciation}</div>
-                        <div class="bg-sky-400 px-4 py-1 rounded-md">{singleWords.pronunciation}</div>
-                        <div class="bg-sky-400 px-4 py-1 rounded-md">{singleWords.pronunciation}</div>
-                    </div>
+                <div id="modal-content" class="modal-box">
+
                 </div>
             </dialog>
         </div>
@@ -273,21 +247,3 @@
 </body>
 
 </html>
-<!-- meaning
-:
-"বড়"
-partsOfSpeech
-:
-"adjective"
-points
-:
-1
-pronunciation
-:
-"বিগ"
-sentence
-:
-"He has a big house."
-synonyms
-:
-(3) ['large', 'huge', 'giant'] -->

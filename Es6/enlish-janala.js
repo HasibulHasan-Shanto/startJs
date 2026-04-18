@@ -58,7 +58,7 @@ const displaySingleLesson = (words) => {
         `
         const infoButton = div.querySelector('.info')
         infoButton.addEventListener('click', () => {
-            loadWord(word.id) 
+            loadWord(word.id)
         })
         lessonContainer.appendChild(div)
     }
@@ -71,8 +71,40 @@ const loadWord = (id) => {
         .then(data => displayWord(data.data))
 }
 const displayWord = (singleWords) => {
-    const modal = document.getElementById('model')
-    
+    const modalContent = document.getElementById('modal-content')
+    modalContent.innerHTML = `
+                                <form method="dialog">
+                        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <h1 class="font-bold text-[20px]">
+                        ${singleWords.word}
+                    </h1>
+                    <p class="font-bold">
+                        Meaning
+                    </p>
+                    <p>
+                        ${singleWords.meaning}
+                    </p>
+                    <h3 class="font-bold text-[18px]">
+                        Example
+                    </h3>
+                    <p>
+                        ${singleWords.sentence}
+                    </p>
+                    <h4 class="font-bold">
+                        সমার্থক শব্দ গুলো
+                    </h4>
+<div class="flex items-center gap-2">
+    ${singleWords.synonyms?.map(s =>
+        `<span class="bg-sky-400 px-4 py-1 rounded-md my-2">${s}</span>`
+    ).join('')
+        }
+</div>
+    <button class=" bg-[#422AD5] rounded-sm py-2 px-4 font-bold text-[14px] text-white">
+        Complete Learning
+    </button>
+            `
+    document.getElementById('my_modal_3').showModal()
 
 }
 const displayLesson = (lessons) => {
@@ -128,3 +160,22 @@ for (const minus of minusButton) {
         paragraph.style.display = 'none'
     })
 }
+
+// < !--meaning
+// :
+// "বড়"
+// partsOfSpeech
+// :
+// "adjective"
+// points
+// :
+// 1
+// pronunciation
+// :
+// "বিগ"
+// sentence
+// :
+// "He has a big house."
+// synonyms
+// :
+// (3)['large', 'huge', 'giant']-- >

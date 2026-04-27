@@ -28,7 +28,19 @@ const students = {
     roll: 34,
     dep: 'cst'
 }
-localStorage.setItem('name', JSON.stringify(students))
-const st = JSON.parse(localStorage.getItem('name'))
+localStorage.setItem('studentName', JSON.stringify(students))
+const st = JSON.parse(localStorage.getItem('studentName'))
 const resul = `I'm a student and my name is ${st.name} and roll number is ${st.roll} and my department is ${st.dep}`
 console.log(resul)
+console.log(st)
+
+const friendsName = [
+    'shanto',
+    'sadia',
+    'sadikul',
+    'eva',
+    'achol',
+]
+localStorage.setItem('friend', JSON.stringify(friendsName))
+const friend = JSON.parse(localStorage.getItem(friend))
+console.log(friend)
